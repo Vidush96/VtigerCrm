@@ -19,11 +19,19 @@ public class BasePage
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	/**
+	 * perform mouse hower action on element
+	 * @param target
+	 */
 	public void mousehower(WebElement target)
 	{
 		Actions act = new Actions(driver);
 		act.moveToElement(target).perform();
 	}
+	/**
+	 * generate random string value
+	 * @return string value
+	 */
 	public String GenRandom()
 	{
 		return RandomStringUtils.random(30, true,true);
