@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tycrm.testscripts.CreateOrg">
+      <class name="com.tycrm.testscripts.CreateContact">
         <methods>
-          <include name="createorg"/>
           <include name="openApp"/>
+          <include name="Createcontact"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- com.tycrm.testscripts.CreateOrg -->
+      </class> <!-- com.tycrm.testscripts.CreateContact -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

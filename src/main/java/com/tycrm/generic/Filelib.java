@@ -87,5 +87,10 @@ public class Filelib
 		}
 		return Long.parseLong(implicitwait);
 	}
+	public String getbrowser()
+	{
+		String browsername = pojt.getProperty("browser");
+		return browsername;
+	}
 	
 }

@@ -16,13 +16,14 @@ import org.testng.annotations.Optional;
 public class GenericTest
 {
 	public WebDriver driver;
-	Filelib flb= new Filelib();
+	private Filelib flb= new Filelib();
+	String browser= flb.getbrowser();
 	/**
 	 * Launch App
 	 * @param browser
 	 */
 	@BeforeMethod
-	public void openApp(@Optional("chrome")String browser)
+	public void openApp()
 	{
 		switch (browser) 
 		{
